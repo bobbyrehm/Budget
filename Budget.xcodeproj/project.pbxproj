@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		083EF3BDB9FE2F8A6EE50E1E /* Pods_BudgetUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11EB70EBDC5AB2825495334B /* Pods_BudgetUITests.framework */; };
 		60A589322004EE6F00CFE27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589312004EE6F00CFE27A /* AppDelegate.swift */; };
-		60A589342004EE6F00CFE27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589332004EE6F00CFE27A /* ViewController.swift */; };
-		60A589372004EE6F00CFE27A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A589352004EE6F00CFE27A /* Main.storyboard */; };
+		60A589342004EE6F00CFE27A /* BudgetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589332004EE6F00CFE27A /* BudgetsViewController.swift */; };
+		60A589372004EE6F00CFE27A /* BudgetsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A589352004EE6F00CFE27A /* BudgetsViewController.storyboard */; };
 		60A589392004EE6F00CFE27A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60A589382004EE6F00CFE27A /* Assets.xcassets */; };
 		60A5893C2004EE6F00CFE27A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60A5893A2004EE6F00CFE27A /* LaunchScreen.storyboard */; };
 		60A589472004EE6F00CFE27A /* BudgetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589462004EE6F00CFE27A /* BudgetTests.swift */; };
 		60A589522004EE6F00CFE27A /* BudgetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589512004EE6F00CFE27A /* BudgetUITests.swift */; };
+		60A589662004F45F00CFE27A /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589652004F45F00CFE27A /* MainCoordinator.swift */; };
+		60A589682004F47100CFE27A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60A589672004F47100CFE27A /* Coordinator.swift */; };
 		DC9B6D8F9D90CC6E9BF06E9F /* Pods_Budget.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C1DA1177B06DBB221893A5 /* Pods_Budget.framework */; };
 		EF742137C7FD288BB28023FE /* Pods_BudgetTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFAF704D56EF40448F337CB /* Pods_BudgetTests.framework */; };
 /* End PBXBuildFile section */
@@ -42,8 +44,8 @@
 		23C1DA1177B06DBB221893A5 /* Pods_Budget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Budget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A5892E2004EE6F00CFE27A /* Budget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A589312004EE6F00CFE27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		60A589332004EE6F00CFE27A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		60A589362004EE6F00CFE27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		60A589332004EE6F00CFE27A /* BudgetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetsViewController.swift; sourceTree = "<group>"; };
+		60A589362004EE6F00CFE27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BudgetsViewController.storyboard; sourceTree = "<group>"; };
 		60A589382004EE6F00CFE27A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60A5893B2004EE6F00CFE27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60A5893D2004EE6F00CFE27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		60A5894D2004EE6F00CFE27A /* BudgetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudgetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60A589512004EE6F00CFE27A /* BudgetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetUITests.swift; sourceTree = "<group>"; };
 		60A589532004EE6F00CFE27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60A589652004F45F00CFE27A /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		60A589672004F47100CFE27A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		7CBE673D3413E7AB1E3C70F6 /* Pods-BudgetUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetUITests/Pods-BudgetUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		83233B000758A0392A354F40 /* Pods-Budget.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Budget.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Budget/Pods-Budget.debug.xcconfig"; sourceTree = "<group>"; };
 		8EFC6977410FE763DDEF9FA8 /* Pods-BudgetTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BudgetTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BudgetTests/Pods-BudgetTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -114,12 +118,11 @@
 		60A589302004EE6F00CFE27A /* Budget */ = {
 			isa = PBXGroup;
 			children = (
-				60A589312004EE6F00CFE27A /* AppDelegate.swift */,
-				60A589332004EE6F00CFE27A /* ViewController.swift */,
-				60A589352004EE6F00CFE27A /* Main.storyboard */,
-				60A589382004EE6F00CFE27A /* Assets.xcassets */,
-				60A5893A2004EE6F00CFE27A /* LaunchScreen.storyboard */,
-				60A5893D2004EE6F00CFE27A /* Info.plist */,
+				60A589602004F2B200CFE27A /* App Delegate */,
+				60A5895F2004F2A700CFE27A /* Coordinators */,
+				60A589612004F2E300CFE27A /* Screens */,
+				60A589632004F30300CFE27A /* Resources */,
+				60A589622004F2F800CFE27A /* Supporting Files */,
 			);
 			path = Budget;
 			sourceTree = "<group>";
@@ -140,6 +143,57 @@
 				60A589532004EE6F00CFE27A /* Info.plist */,
 			);
 			path = BudgetUITests;
+			sourceTree = "<group>";
+		};
+		60A5895F2004F2A700CFE27A /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				60A589672004F47100CFE27A /* Coordinator.swift */,
+				60A589652004F45F00CFE27A /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		60A589602004F2B200CFE27A /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				60A589312004EE6F00CFE27A /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		60A589612004F2E300CFE27A /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				60A5893A2004EE6F00CFE27A /* LaunchScreen.storyboard */,
+				60A589642004F44700CFE27A /* BudgetsViewController */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		60A589622004F2F800CFE27A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60A5893D2004EE6F00CFE27A /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60A589632004F30300CFE27A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60A589382004EE6F00CFE27A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		60A589642004F44700CFE27A /* BudgetsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				60A589332004EE6F00CFE27A /* BudgetsViewController.swift */,
+				60A589352004EE6F00CFE27A /* BudgetsViewController.storyboard */,
+			);
+			path = BudgetsViewController;
 			sourceTree = "<group>";
 		};
 		A89BFB860DA351EC495617C4 /* Frameworks */ = {
@@ -283,7 +337,7 @@
 			files = (
 				60A5893C2004EE6F00CFE27A /* LaunchScreen.storyboard in Resources */,
 				60A589392004EE6F00CFE27A /* Assets.xcassets in Resources */,
-				60A589372004EE6F00CFE27A /* Main.storyboard in Resources */,
+				60A589372004EE6F00CFE27A /* BudgetsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +509,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60A589342004EE6F00CFE27A /* ViewController.swift in Sources */,
+				60A589682004F47100CFE27A /* Coordinator.swift in Sources */,
+				60A589342004EE6F00CFE27A /* BudgetsViewController.swift in Sources */,
+				60A589662004F45F00CFE27A /* MainCoordinator.swift in Sources */,
 				60A589322004EE6F00CFE27A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -492,12 +548,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		60A589352004EE6F00CFE27A /* Main.storyboard */ = {
+		60A589352004EE6F00CFE27A /* BudgetsViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				60A589362004EE6F00CFE27A /* Base */,
 			);
-			name = Main.storyboard;
+			name = BudgetsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		60A5893A2004EE6F00CFE27A /* LaunchScreen.storyboard */ = {
@@ -625,7 +681,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XQ2E77FT5;
-				INFOPLIST_FILE = Budget/Info.plist;
+				INFOPLIST_FILE = "Budget/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rehmix.Budget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -641,7 +697,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2XQ2E77FT5;
-				INFOPLIST_FILE = Budget/Info.plist;
+				INFOPLIST_FILE = "Budget/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rehmix.Budget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
